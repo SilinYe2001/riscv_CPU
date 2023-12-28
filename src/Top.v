@@ -73,7 +73,7 @@ module SingleCycleCPU#(
       .op_B_sel(op_B_sel),         
       .ALU_Control(ALU_Control),  
       // branch
-      .branch_op(branch_op),
+     .branch_op(branch_op),
       //data memory and writeback 
       .mem_wEn(mem_wEn),  
       .MemSize(MemSize),
@@ -110,14 +110,14 @@ module SingleCycleCPU#(
 
    // branch MUX 
    assign ALU_branch_flag=ALU_result[0];
-   assign branch_jump_flag = (branch_op == 0) ? 1'b0:ALU_branch_flag;
+   assign branch_jump_flag = branch_op & ALU_branch_flag;
 
    //target_pc MUX (target PC address of branch/jump)               
    assign target_PC = (branch_jump_flag == 1'b1||opcode == `J_JAL)? (PC + imm32)://branch/jal instructions 
                             (opcode == `I_JALR)? (Rdata1+imm32): //jalr instruction 
                             32'b0;                                                        //default 
    //next PC select mux  (jump or PC+4)
-   assign next_PC_select= (branch_jump_flag == 1'b1 || opcode==`I_JALR || opcode==`J_JAL)? 1'b1:1'b0;
+   assign next_PC_select= (branch_jump_flag == 1'b1 || opcode==`I_JALR || opcode==`J_JAL);
    assign NPC = next_PC_select ? target_PC:PC + 4;
 
    //-----------------------------------------------------------------------------------------------------------------//
