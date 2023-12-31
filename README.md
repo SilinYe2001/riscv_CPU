@@ -2,6 +2,7 @@
 Use Verilog to implement a riscv CPU, from single cycle to pipeline.
 ## Single cycle diagram:
 ![riscv_CPU](docs/singlecycle.png)
+
 ## Dependency
 iverilog: https://bleyer.org/icarus/
 
@@ -61,6 +62,13 @@ The testing result is in: Sim/my_test_result/
 * improve the flow diagram
 * pipeline structure
 * memory read automation
+
+## Reference
+* https://github.com/SilinYe2001/riscv_CPU/blob/main/docs/lecture08_RISCV_Impl.pdf
+* https://github.com/SilinYe2001/riscv_CPU/blob/main/docs/riscvsheet.pdf
+* https://github.com/Evensgn/RISC-V-CPU/blob/master/doc/riscv-toolchain-installation-usage.md
+* https://www.ruanyifeng.com/blog/2015/02/make.html
+* https://hackmd.io/@oR8-QX4TQzGKDJ72DmqDUg/SJrNq1QuB
 
 
 
