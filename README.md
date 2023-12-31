@@ -20,3 +20,10 @@ source run_script.sh
 ```
 This command will use icarus verilog to compile and simulate the files.
 
+The output is generated in:
+
+Sim/my_test_result/
+
+The waveform is in waveform.vcd
+
+
