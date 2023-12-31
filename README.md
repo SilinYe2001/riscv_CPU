@@ -52,5 +52,15 @@ The output .hex and .bin file is in ./build/
 
 The suggested format is already in the src folder for reference.
 
+## Testing result
+
+The testing result is in: Sim/my_test_result/
+
+## Future improvement
+
+* improve the flow diagram
+* pipeline structure
+* memory read automation
+
 
 
