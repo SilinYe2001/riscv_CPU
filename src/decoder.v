@@ -58,9 +58,6 @@ wire[31:0] s_imm_32;
 wire[31:0] uj_imm_32; // sign extend and and assign the right one 
 wire[31:0] shamt_32;
 
-wire [6:0] opcode;
-wire [6:0] funct7;
-wire [2:0] funct3;
 //wire [1:0] extend_sel;
 wire [ADDRESS_BITS-1:0] branch_target;
 wire [ADDRESS_BITS-1:0] JAL_target;

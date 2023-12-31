@@ -25,7 +25,7 @@ module Top_tb;
       #0 rst = 1;
 
       // Load program
-      #0 $readmemh("lui_auipc_mem.hex", CPU.IMEM.Mem);  // insrtuction memory input
+      #0 $readmemh("./Sim/asm2hex/build/br-mem.hex", CPU.IMEM.Mem);  // insrtuction memory input
      //#0 $readmemh("mem_in.hex", CPU.DMEM.Mem);  // data memory input
       //#0 $readmemh("regs_in.hex", CPU.RF.Mem);  //register file input 
 
@@ -36,10 +36,10 @@ module Top_tb;
       wait(exit);
       
       // Dump registers
-      #0 $writememh("regs_out.hex", CPU.RF.Mem);
+      #0 $writememh("./Sim/my_test_result/regs_out.hex", CPU.RF.Mem);
 
       // Dump memory
-      #0 $writememh("mem_out.hex", CPU.DMEM.Mem);
+      #0 $writememh("./Sim/my_test_result/mem_out.hex", CPU.DMEM.Mem);
 
       $finish;      
    end
