@@ -59,9 +59,9 @@ The testing result is in: Sim/my_test_result/
 
 ## Future improvement
 
-* improve the flow diagram
 * pipeline structure
 * memory read automation
+* complete testbench for timing calculation, input output compare
 
 ## Reference
 * https://github.com/SilinYe2001/riscv_CPU/blob/main/docs/lecture08_RISCV_Impl.pdf
