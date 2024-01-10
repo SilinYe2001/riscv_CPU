@@ -1,6 +1,3 @@
-// Name: Mohammed Alsoughayer, Sean Brandenburg
-// EC413 Project: Decode Module
-
 module decoder #(
   parameter ADDRESS_BITS = 32
 ) (
