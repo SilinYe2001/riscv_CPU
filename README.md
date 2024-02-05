@@ -59,6 +59,8 @@ The testing result is in: Sim/my_test_result/
 
 ## Future improvement
 
+Project continues at: https://github.com/hare-care/CE362
+
 * pipeline structure
 * memory read automation
 * complete testbench for timing calculation, input output compare
