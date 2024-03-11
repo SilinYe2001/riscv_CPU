@@ -1,3 +1,5 @@
+Project continues at: https://github.com/hare-care/CE362
+
 # riscv_CPU
 Use Verilog to implement a riscv CPU, from single cycle to pipeline.
 ## Single cycle diagram:
@@ -59,7 +61,7 @@ The testing result is in: Sim/my_test_result/
 
 ## Future improvement
 
-Project continues at: https://github.com/hare-care/CE362
+
 
 * pipeline structure
 * memory read automation
